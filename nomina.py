@@ -1,3 +1,4 @@
+import re
 print('Buen día usuario por favor registre la siguiente información')
 smlv = 1000000
 sub = 117100
@@ -7,10 +8,10 @@ descuento_p = 4
 
 
 documento = str (input ("Numero de Documento: " ))
-nombre = str (input ("Nombres: ")) 
-apellidos = str (input ("Apellidos: "))
-salario = int (input ('Tu salario: '))
-dias = int (input('¿Cuantos dias trabajo?: '))
+nombre = re.findall("[a-zA-Z]", input ("Nombres: " ))  
+apellidos = re.findall("[a-zA-Z]", input ("Apellidos: " )) 
+salario = re.findall("[0-9]", input("Digite su salario minimo: " ))
+dias = re.findall("[0-9]", input('¿Cuantos dias trabajo?:'))
 
 
 
