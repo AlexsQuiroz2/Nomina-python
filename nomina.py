@@ -10,8 +10,8 @@ descuento_p = 4
 documento = str (input ("Numero de Documento: " ))
 nombre = re.findall("[a-zA-Z]", input ("Nombres: " ))  
 apellidos = re.findall("[a-zA-Z]", input ("Apellidos: " )) 
-salario = re.findall("[0-9]", input("Digite su salario minimo: " ))
-dias = re.findall("[0-9]", input('¿Cuantos dias trabajo?:'))
+salario = int (input("Digite su salario minimo: " ))
+dias = int (input('¿Cuantos dias trabajo?:'))
 
 
 
